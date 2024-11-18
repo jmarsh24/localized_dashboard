@@ -2,7 +2,7 @@
 # The values disaplayed here are the default ones. Uncomment and change them to fit your needs.
 Avo.configure do |config|
   ## == Routing ==
-  config.root_path = '/avo'
+  config.root_path = "/avo"
   # used only when you have custom `map` configuration in your config.ru
   # config.prefix_path = "/internal"
 
@@ -140,20 +140,20 @@ Avo.configure do |config|
   #   add_breadcrumb "Home", '/avo'
   # end
 
-  ## == Menus ==
-  # config.main_menu = -> {
-  #   section "Dashboards", icon: "avo/dashboards" do
-  #     all_dashboards
-  #   end
+  # == Menus ==
+  config.main_menu = -> {
+    section "Dashboards", icon: "avo/dashboards" do
+      all_dashboards
+    end
 
-  #   section "Resources", icon: "avo/resources" do
-  #     all_resources
-  #   end
+    # section "Resources", icon: "avo/resources" do
+    #   all_resources
+    # end
 
-  #   section "Tools", icon: "avo/tools" do
-  #     all_tools
-  #   end
-  # }
+    # section "Tools", icon: "avo/tools" do
+    #   all_tools
+    # end
+  }
   # config.profile_menu = -> {
   #   link "Profile", path: "/avo/profile", icon: "heroicons/outline/user-circle"
   # }
