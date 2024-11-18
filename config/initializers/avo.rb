@@ -146,9 +146,9 @@ Avo.configure do |config|
       all_dashboards
     end
 
-    # section "Resources", icon: "avo/resources" do
-    #   all_resources
-    # end
+    section "Resources", icon: "avo/resources" do
+      all_resources
+    end
 
     # section "Tools", icon: "avo/tools" do
     #   all_tools

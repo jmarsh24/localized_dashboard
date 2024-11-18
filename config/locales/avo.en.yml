@@ -2,4 +2,6 @@ en:
   avo:
     dashboards:
       disposals:
-        name: English
+        name: English Dashboard
+    resource_translations:
+      post: English Resource

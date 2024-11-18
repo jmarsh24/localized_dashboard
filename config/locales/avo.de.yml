@@ -1,5 +1,7 @@
-en:
+de:
   avo:
     dashboards:
       disposals:
-        name: German
+        name: German Dashboard
+    resource_translations:
+      post: German Resource
