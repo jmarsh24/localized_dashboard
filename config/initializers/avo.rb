@@ -157,4 +157,6 @@ Avo.configure do |config|
   # config.profile_menu = -> {
   #   link "Profile", path: "/avo/profile", icon: "heroicons/outline/user-circle"
   # }
+
+  config.mount_avo_engines = false
 end
