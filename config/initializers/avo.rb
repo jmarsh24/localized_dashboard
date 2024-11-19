@@ -143,7 +143,7 @@ Avo.configure do |config|
   # == Menus ==
   config.main_menu = -> {
     section "Dashboards", icon: "avo/dashboards" do
-      all_dashboards
+      dashboard :dashy, label: I18n.t("avo.dashboards.disposals.name")
     end
 
     section "Resources", icon: "avo/resources" do
@@ -157,6 +157,4 @@ Avo.configure do |config|
   # config.profile_menu = -> {
   #   link "Profile", path: "/avo/profile", icon: "heroicons/outline/user-circle"
   # }
-
-  config.mount_avo_engines = false
 end
