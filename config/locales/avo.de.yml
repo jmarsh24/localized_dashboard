@@ -9,7 +9,8 @@ de:
       posts:
         title: German Title
         is_featured: German Featured
-    filters:
-      featured: German Filter
+    filter_translations:
+      button_label: German Filter
+      name: German Filter
     resource_translations:
       post: German Resource

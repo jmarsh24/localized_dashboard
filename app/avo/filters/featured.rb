@@ -1,6 +1,6 @@
 class Avo::Filters::Featured < Avo::Filters::BooleanFilter
-  self.name = -> { I18n.t("avo.filters.featured") }
-  self.button_label = -> { I18n.t("avo.filter.button_label") }
+  self.name = -> { I18n.t("avo.filter_translations.name") }
+  self.button_label = -> { I18n.t("avo.filter_translations.button_label") }
 
   def apply(request, query, values)
     return query if values["is_featured"] && values["is_unfeatured"]
