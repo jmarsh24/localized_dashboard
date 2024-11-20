@@ -1,4 +1,22 @@
 GEM
+  remote: https://packager.dev/avo-hq/
+  specs:
+    avo-dashboards (3.14.0)
+      avo (= 3.14.0)
+      turbo-rails
+      view_component (>= 3.7.0)
+      zeitwerk (>= 2.6.12)
+    avo-menu (3.14.0)
+      avo (= 3.14.0)
+      docile
+      zeitwerk (>= 2.6.12)
+    avo-pro (3.14.0)
+      avo (= 3.14.0)
+      avo-dashboards (= 3.14.0)
+      avo-menu (= 3.14.0)
+      zeitwerk (>= 2.6.12)
+
+GEM
   remote: https://rubygems.org/
   specs:
     actioncable (8.0.0)
@@ -92,20 +110,6 @@ GEM
       turbo-rails (>= 2.0.0)
       turbo_power (>= 0.6.0)
       view_component (>= 3.7.0)
-      zeitwerk (>= 2.6.12)
-    avo-dashboards (3.14.0)
-      avo (= 3.14.0)
-      turbo-rails
-      view_component (>= 3.7.0)
-      zeitwerk (>= 2.6.12)
-    avo-menu (3.14.0)
-      avo (= 3.14.0)
-      docile
-      zeitwerk (>= 2.6.12)
-    avo-pro (3.14.0)
-      avo (= 3.14.0)
-      avo-dashboards (= 3.14.0)
-      avo-menu (= 3.14.0)
       zeitwerk (>= 2.6.12)
     base64 (0.2.0)
     bcrypt_pbkdf (1.1.1)
@@ -407,7 +411,8 @@ PLATFORMS
   x86_64-linux-musl
 
 DEPENDENCIES
-  avo-pro
+  avo
+  avo-pro!
   bootsnap
   brakeman
   capybara
