@@ -24,6 +24,5 @@ module LocalizedDashboard
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
     #
-    Rails.application.routes.default_url_options[:path_params] = { locale: I18n.default_locale, force_locale: I18n.default_locale }
   end
 end
