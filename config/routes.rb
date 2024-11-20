@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  scope "/:force_locale", force_locale: /#{I18n.available_locales.join("|")}/ do
+  scope ":locale" do
     mount Avo::Engine, at: Avo.configuration.root_path
   end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
@@ -14,4 +14,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "posts#index"
+end
+
+Avo::Engine.routes.draw do
+  scope "(:locale)" do
+    instance_exec(&Avo.mount_engines)
+  end
 end
