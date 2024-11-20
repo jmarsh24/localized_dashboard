@@ -3,5 +3,7 @@ en:
     dashboards:
       disposals:
         name: English Dashboard
+    filters:
+      published: English Filter
     resource_translations:
       post: English Resource

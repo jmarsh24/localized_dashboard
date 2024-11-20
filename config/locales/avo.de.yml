@@ -3,5 +3,7 @@ de:
     dashboards:
       disposals:
         name: German Dashboard
+    filters:
+      published: German Filter
     resource_translations:
       post: German Resource

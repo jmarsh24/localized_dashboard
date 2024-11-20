@@ -8,5 +8,12 @@ class Avo::Resources::Post < Avo::BaseResource
 
   def fields
     field :id, as: :id
+    field :title, as: :text
+    field :is_featured, as: :boolean
+  end
+
+
+  def filters
+    Avo::Filters::Featured
   end
 end
