@@ -3,7 +3,13 @@ de:
     dashboards:
       disposals:
         name: German Dashboard
+    filter:
+      button_label: German Filter
+    field_translations:
+      posts:
+        title: German Title
+        is_featured: German Featured
     filters:
-      published: German Filter
+      featured: German Filter
     resource_translations:
       post: German Resource

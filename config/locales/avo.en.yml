@@ -3,7 +3,13 @@ en:
     dashboards:
       disposals:
         name: English Dashboard
+    filter:
+      button_label: English Filter
+    field_translations:
+      posts:
+        title: English Title
+        is_featured: English Featured
     filters:
-      published: English Filter
+      featured: English Filter
     resource_translations:
       post: English Resource

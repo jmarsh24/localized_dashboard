@@ -8,12 +8,12 @@ class Avo::Resources::Post < Avo::BaseResource
 
   def fields
     field :id, as: :id
-    field :title, as: :text
-    field :is_featured, as: :boolean
+    field :title, as: :text, translation_key: "avo.field_translations.posts.title"
+    field :is_featured, as: :boolean, translation_key: "avo.field_translations.posts.is_featured"
   end
 
 
   def filters
-    Avo::Filters::Featured
+    filter Avo::Filters::Featured
   end
 end
