@@ -25,7 +25,7 @@ Avo.configure do |config|
   # config.current_user_method = :current_user
   # config.authenticate_with do
   # end
-  config.default_url_options = [:locale]
+  config.default_url_options = [ :locale ]
   config.mount_avo_engines = false
   ## == Authorization ==
   # config.is_admin_method = :is_admin
@@ -158,8 +158,4 @@ Avo.configure do |config|
   # config.profile_menu = -> {
   #   link "Profile", path: "/avo/profile", icon: "heroicons/outline/user-circle"
   # }
-end
-
-Rails.configuration.to_prepare do
-  Avo::ApplicationController.include AvoLocalization
 end
