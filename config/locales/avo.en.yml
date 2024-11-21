@@ -26,6 +26,9 @@ en:
     create_new_item: Create new %{item}
     dashboard: Dashboard
     dashboards: Dashboards
+    dashboard_translations:
+      disposals:
+        name: English Dashboard
     default_scope: All
     delete: delete
     delete_file: Delete file
