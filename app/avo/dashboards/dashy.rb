@@ -1,6 +1,6 @@
 class Avo::Dashboards::Dashy < Avo::Dashboards::BaseDashboard
   self.id = "dashy"
-  # self.name = I18n.t("avo.dashboards.disposals.name")
+  self.name = -> { I18n.t("avo.dashboards.disposals.name") }
   # self.description = "Tiny dashboard description"
   # self.grid_cols = 3
   self.visible = -> do
