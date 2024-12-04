@@ -25,7 +25,7 @@ Avo.configure do |config|
   # config.current_user_method = :current_user
   # config.authenticate_with do
   # end
-  config.default_url_options = [:locale]
+  config.default_url_options = [ :locale ]
   config.mount_avo_engines = false
   ## == Authorization ==
   # config.is_admin_method = :is_admin
@@ -41,7 +41,7 @@ Avo.configure do |config|
   #   search: 'search?',
   # }
   # config.raise_error_on_missing_policy = false
-  config.authorization_client = nil
+  config.authorization_client = :pundit
   config.explicit_authorization = true
 
   ## == Localization ==

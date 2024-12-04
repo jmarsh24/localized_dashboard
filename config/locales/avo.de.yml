@@ -1,5 +1,6 @@
 de:
   avo:
+    not_authorized: this is a German translation
     dashboards:
       disposals:
         name: German Dashboard
