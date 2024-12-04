@@ -64,3 +64,5 @@ end
 
 gem "avo"
 gem "avo-pro", source: "https://packager.dev/avo-hq/"
+
+gem "pundit"

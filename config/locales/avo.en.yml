@@ -1,5 +1,6 @@
 en:
   avo:
+    not_authorized: this is an english translation
     dashboards:
       disposals:
         name: English Dashboard
